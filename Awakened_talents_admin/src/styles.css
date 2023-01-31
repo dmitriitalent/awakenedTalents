@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 15px;
+    font-family: Arial;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Roboto:wght@300;400&display=swap');
+:root {
+    --bgc-main: #f0e2c0;
+    --bgc-main2: #ecd5a0;
+    --bgc-bgc: #fcf7eb;
+    --bgc-shadow: #d1c6a9;
+    --bgc-red: #f69a9a;
+    --bgc-green: #bcf9b9;
+
+    --border-radius: 10px;
+    --border-width: 3px;
+    --border-color: var(--bgc-shadow);
+    --border: var(--border-width) var(--border-color) solid;
+
+    --font-family: Roboto;
+    --font-size: 18px;
+
+    --text-indent: 30px;
+    
+}
+
+
+button {
+    background-color: var(--bgc-bgc);
+    border: var(--border) ;
+    border-radius: var(--border-radius);
+    height: 50px;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    transition: 0.15s;
+    width: 300px;
+    outline-color: var(--bgc-main2);
+
+    /* unselectable */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+}
+button:hover {
+    background-color: var(--bgc-main2);
+}
+
+input {
+    background-color: var(--bgc-bgc);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    height: 42px;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    outline-color: var(--bgc-main2);
+}
+
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+
+table {
+    border: var(--border);   
+}
+
+td {
+	border-left: var(--border);
+}
+
+.even {
+	background-color: var(--bgc-main);
+}
+.odd {
+	background-color: var(--bgc-main2);
+}
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<div class="content">
+	<button class="closeBtn unselectable" (click)="closeMenu()"><img src="../../../assets/крестик.png" class="closeImg"></button>
+    <div class="selectField formField">
+        <p>Какой предмет вы хотите преподавать?</p>
+		<div class="select-subject">
+			<div class="selected-subject" (click)="toggleSelectOptions()">{{selectedSubject}}</div>
+			<ul *ngIf="isOpenSelectOptions" class="select-options">
+				<li class="option" *ngFor="let subject of subjects; let last = last" [ngClass]="{lastOption: last}" 
+				(click)="selectOption(subject.RouterName)">{{subject.Name}}</li>
+			</ul>
+		</div>
+    </div>
+	<div class="nameField formField">
+        <p>Введите полное имя (ФИО):</p>
+        <input type="text" class="add-name" [(ngModel)]="data.FullName">
+    </div>          
+    <div class="descriptionField formField">
+        <p>Введите своё описание и контактные данные:</p>
+        <textarea class="add-description" [(ngModel)]="data.Description"></textarea>
+    </div>
+	<button class="postData" (click)="postRequest()" >{{postDataContent}}</button>
+	
+</div>

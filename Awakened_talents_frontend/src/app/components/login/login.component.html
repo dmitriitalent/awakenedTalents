@@ -1,0 +1,19 @@
+<div class="login">
+    <div class="loginField">
+        <p>Логин:</p>
+        <input type="text" [(ngModel)]="LoginForm.login" name="login" (keydown.enter)="Login()">
+    </div>
+    <div class="loginField">
+        <p>Пароль:</p>
+        <input type="password" [(ngModel)]="LoginForm.password" name="password" (keydown.enter)="Login()">
+    </div>
+    <div class="loginField">
+        <button class="login_button" (click)="Login()">Войти</button>
+    </div>
+    <div class="loginField registerLink unselectable" routerLink="/register">
+        Вы не зарегистрированы?
+    </div>
+</div>
+<div [@payAttention]="errorWindow" class="errorWindow">
+    {{error}}
+</div>

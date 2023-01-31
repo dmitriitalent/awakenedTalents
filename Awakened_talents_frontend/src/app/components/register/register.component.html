@@ -1,0 +1,29 @@
+<div class="register">
+    <div class="registerField">
+        <p>Логин:</p>
+        <input type="text" placeholder="Gertofiza" [(ngModel)]="registerForm.login" name="login">
+    </div>
+    <div class="registerField">
+        <p>Почта:</p>
+        <input type="email" placeholder="example@gmail.com" [(ngModel)]="registerForm.email" name="email"> 
+    </div>
+    <div class="registerField">
+        <p>Пароль:</p>
+        <input type="password" [(ngModel)]="registerForm.password" name="password">
+    </div>
+    <div class="registerField" >
+        <p>Подтвердите пароль:</p>
+        <input type="password" [(ngModel)]="passwordConfirm" name="passwordConfirm">
+    </div>
+    <div class="registerField">
+        <button class="register_button" (click)="register()">
+            Зарегистрироваться
+        </button>
+    </div>
+    <div class="registerField registerLink" routerLink="/login">
+        Вы уже зарегистрированы?
+    </div>
+</div>
+<div [@payAttention]="errorWindow" class="errorWindow">
+    {{error}}
+</div>

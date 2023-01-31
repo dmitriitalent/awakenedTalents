@@ -1,0 +1,44 @@
+.login {
+    display: block;
+    width: 400px;
+    border: var(--border);
+    padding: 5px;
+    background-color: var(--bgc-main);
+    border-radius: var(--border-radius);
+}
+
+.loginField {
+    width: 400px;
+    margin: 20px;
+}
+
+input {
+    width: calc(100% - 50px);
+    height: 40px;
+}
+
+.login_button {
+    width: calc(100% - 40px);
+}
+
+.registerLink {
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+    outline: none;
+}
+.registerLink:hover{
+    cursor: pointer;
+}
+
+.errorWindow {
+    margin-top: 5px;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    width: 400px;
+    border: var(--border);
+    padding: 5px;
+    background-color: var(--bgc-main);
+    border-radius: var(--border-radius);
+}

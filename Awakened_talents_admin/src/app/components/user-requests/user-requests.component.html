@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Описание запроса</td>
+        <td>Json запроса</td>
+        <td>Репутация пользователя</td>
+        <td>Дата регистрации пользователя</td>
+        <td>Разрешить</td>
+        <td>Удалить запрос</td>
+    </tr>
+    <tr *ngFor="let request of userRequests; let even = even; let odd = odd;" [ngClass]="{'even':even, 'odd':odd}">
+        <td>{{request.Id}}</td>
+        <td>{{request.RequestDescription}}</td>
+        <td>{{request.JsonData}}</td>
+        <td>{{request.User.Reputation}}</td>
+        <td>{{request.User.RegistrationDate}}</td>
+        <td><button style="font-size: 14px; width: 100px; background-color: #bcf9b9"(click)=Allow(request)>Одобрить</button></td>
+        <td><button style="font-size: 14px; width: 100px; background-color: #f69a9a"(click)=Delete(request)>Удалить</button></td>
+    </tr>
+</table>

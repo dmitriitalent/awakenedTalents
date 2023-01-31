@@ -1,0 +1,32 @@
+
+
+.panel {
+    border: 3px #333333 solid;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+textarea {
+    width: 500px;
+    height: 300px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+input {
+    font-size: 30px;
+    margin: 5px;
+}
+
+select {
+    font-size: 30px;
+    margin: 5px;
+    height: 40px;
+}
+
+.greenFlash {
+    background-color: greenyellow;
+}

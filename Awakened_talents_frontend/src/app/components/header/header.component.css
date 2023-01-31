@@ -1,0 +1,30 @@
+
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: var(--bgc-main);
+    border-bottom: var(--border);
+    display: flex;
+    justify-content: center;
+}
+
+.header-input {
+    margin: 5px;
+}
+
+#search-query {
+    width: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#search {
+    width:50px;
+}
+#search-img {
+    width: 30px;
+    margin-top: 5px;
+    opacity: 85%;
+}
+
+

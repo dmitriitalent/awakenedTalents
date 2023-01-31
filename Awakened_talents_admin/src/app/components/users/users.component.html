@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <td>Логин</td>
+        <td>Полное имя</td>
+        <td>Репутация</td>
+        <td>Преподаёт:</td>
+    </tr>
+    <tr *ngFor="let user of users; let even = even; let odd = odd;" [ngClass]="{'even':even, 'odd':odd}">
+        <td>{{user.Login}}</td>
+        <td>{{user.FullName}}</td>
+        <td>{{user.Reputation}}</td>
+        <td>
+            <div *ngIf="!IsTeacher(user)">не преподаёт</div>
+            <app-teacher-subjects *ngIf="IsTeacher(user)" [user]="user"></app-teacher-subjects>
+        </td>
+    </tr>
+</table>

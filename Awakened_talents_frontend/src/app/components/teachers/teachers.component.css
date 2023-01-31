@@ -1,0 +1,96 @@
+.overflowHidden {
+	overflow: hidden;
+}
+
+.content {
+	width: 800px;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	background-color: var(--bgc-main);
+	min-height: 1000px;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.teacher {
+	width: calc(100% - 5px);
+	height: 250px;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	margin-bottom: 5px;
+	position: relative;
+	display: flex;
+	transition: 0.2s;
+	background-color: var(--bgc-main2);
+	font-size: 20px;
+}
+.teacher:hover {
+	scale: 1.07;
+}
+
+.preview {
+	height: 234px;
+	width: 234px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	object-fit: cover;
+}
+
+
+.name {
+	margin-top: 5px;
+	font-size: 30px;
+	text-align: center;
+	border-bottom: var(--border);
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.description {
+	margin-top: 5px;
+	margin-right: 5px;
+	text-indent: var(--text-indent);
+	width: calc(100% - 20px);
+	text-overflow: ellipsis;
+	height: 190px;;
+	overflow: hidden;
+	padding-left: 10px;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+.openMenuBtn {
+	width: 790px;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	background-color: var(--bgc-bgc);
+	padding: 10px;
+	height: 20px;
+	transition: 1s;
+	display: flex;
+	justify-content: center;
+
+	/* unselectable */
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.openMenuBtn:hover {
+	background-color: var(--bgc-main2);
+}
+
+.menu {
+	width: 800px;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	background-color: var(--bgc-main);
+	padding: 5px;
+	height: 515px;
+	padding-bottom: 25px;
+	transition: 1s;
+}
+

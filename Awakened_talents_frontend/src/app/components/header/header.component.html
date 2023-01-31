@@ -1,0 +1,16 @@
+<header>
+    <button class="header-input" routerLink="catalog">
+        Предметы
+    </button>
+    <button class="header-input" routerLink="about">
+        О нас
+    </button>
+    <button class="header-input" routerLink="reviews">
+        Отзывы
+    </button>
+    <input type="text" class="header-input" id="search-query" [hidden]="Hidden_query">
+    <button id="search" class="header-input" [hidden]="Hidden_query"><img src="../../../assets/lens.png" id="search-img"></button>
+    <button class="header-input" routerLink="{{LoginTypeRoute}}">
+        {{LoginType}}
+    </button>
+</header>

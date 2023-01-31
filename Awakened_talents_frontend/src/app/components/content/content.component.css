@@ -1,0 +1,9 @@
+.content {
+    width: 800px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--bgc-main);
+    min-height: 1000px;
+    padding: 5px;
+}
+

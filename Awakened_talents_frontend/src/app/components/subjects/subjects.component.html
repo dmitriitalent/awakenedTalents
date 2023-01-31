@@ -1,0 +1,8 @@
+<div class="subject" *ngFor="let elem of subjects" routerLink="/teachers/{{elem.RouterName}}">
+    <img src="{{elem.PicName}}" alt="" class="preview">
+    <div class="information">
+        <div class="teacherCount unselectable">{{elem.TeachersCount}}</div>
+        <div class="name">{{elem.Name}}</div>
+        <div class="description">{{elem.Description}}</div>
+    </div>
+</div>

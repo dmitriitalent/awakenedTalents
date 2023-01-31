@@ -1,0 +1,8 @@
+<div 
+*ngFor="let subject of user.TeacherProfile.Subjects" 
+class="subjectName" 
+(mouseenter)="hover(subject)" 
+(mouseleave)="unhover(subject)"
+(click)="Delete(user.TeacherProfile.Id, subject.RouterName)">
+    {{subject.Name}}
+</div>

@@ -1,0 +1,64 @@
+.subject {
+    width: calc(100% - 5px);
+    height: 250px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+    transition: 0.2s;
+    background-color: var(--bgc-main2);
+    font-size: 20px;
+}
+.subject:hover {
+    scale: 1.07;
+}
+
+.preview {
+    height: 234px;
+    width: 234px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    object-fit: cover;
+}
+
+.information {
+    width: 100%;
+}
+.name {
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: var(--border);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.description {
+    margin-top: 5px;
+    margin-right: 5px;
+    text-indent: var(--text-indent);
+    width: calc(100% - 20px);
+    text-overflow: ellipsis;
+    height: 190px;;
+    overflow: hidden;
+    padding-left: 10px;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.teacherCount {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+

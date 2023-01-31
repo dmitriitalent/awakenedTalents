@@ -1,0 +1,12 @@
+.sidebar {
+    min-height: 300px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--bgc-main);
+    margin-right: 5px;
+    width: 160px;
+}
+
+.sidebar-input {
+    margin: 5px;
+}

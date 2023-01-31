@@ -1,0 +1,18 @@
+
+<div class="panel">
+
+	<h1>Добавить учебный предмет (subject)</h1>
+	<input [(ngModel)]="subject.Name" type="text" id="name" placeholder="name Название предмета">
+	<input [(ngModel)]="subject.RouterName" type="text" id="name" placeholder="routerName Название предмета на английском">
+	<textarea [(ngModel)]="subject.Description" placeholder="description Описание предмета"></textarea >
+	<input [(ngModel)]="subject.TeachersCount" type="number" id="teachersCount" placeholder="teachersCount количество учителей, лучше не заполнять">
+	<select [(ngModel)]="subject.Type">
+		<option value="math">Математика</option>
+		<option value="languages">Языки</option>
+		<option value="technical">Технические</option>
+		<option value="natural">Естественные</option>
+		<option value="humanitarian">Гуманитарные</option>
+	</select>
+	<input type="file" name="file" (change)="uploadFile($event)">
+	<button (click)="addSubject()">Добавить предмет</button>
+</div>

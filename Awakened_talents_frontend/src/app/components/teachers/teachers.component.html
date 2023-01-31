@@ -1,0 +1,14 @@
+<div (click)="openMenu()" class="{{menuClasses}}" *ngIf="auth.IsAuth()">
+    {{menuContent}}
+    <app-become-teacher-menu (onClose)="closeMenu($event)" *ngIf="menuIsOpen"></app-become-teacher-menu>
+</div>
+
+<div class="content">
+    <div class="teacher" *ngFor="let teacher of teachers">
+        <img src="../../../assets/Screenshot_7.png" alt="" class="preview">
+        <div class="information">
+            <div class="name">{{teacher.User.FullName}}</div>
+            <div class="description">{{teacher.Description}}</div>
+        </div>
+    </div>
+</div>

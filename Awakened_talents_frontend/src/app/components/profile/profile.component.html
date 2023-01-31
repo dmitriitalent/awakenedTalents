@@ -1,0 +1,31 @@
+
+
+<div class="work-space">
+	<div class="backgroundImage unselectable"></div>
+	<label for="newAvatarPhoto"><img class="avatar unselectable" src="{{env.server_url}}/assets/{{userDataHtml.user.ImagePath}}"></label>
+	<input type="file" (change)="updateAvatar($event)" name="fileAvatar" id="newAvatarPhoto" style="visibility: hidden; position: absolute;">
+	<div class="userLogin unselectable" (mouseenter)="ShowLogout()" (mouseleave)="HideLogout()" (click)="Logout()">{{userLogin}}</div>
+	<div class="content">
+	
+	<div class="profileEditor">
+		<div class="teacherProfile">
+			<div class="formField">
+				<span>Полное имя:</span>
+				<input class="fullName" [(ngModel)]="fullName" (input)="changeFullName()">
+			</div>
+			<div class="formField">
+				<span>Описание учительсокого профиля и контактные данные:</span>
+				<span class="symbolsCounter">{{symbolsCounterDescription}}/{{maxSymbolsCounterDescription}}</span>
+				<textarea class="description" [(ngModel)]="description" (input)="changeDescription()" maxlength="{{maxSymbolsCounterDescription}}"></textarea>
+			</div>
+			<button class="updateTeacherProfile" (click)="updateUser()">Сохранить изменения</button>
+		</div>
+		
+		
+	</div>
+</div>
+
+
+
+
+

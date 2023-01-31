@@ -1,0 +1,12 @@
+.subjectName {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--bgc-bgc);
+    padding: 5px;
+    margin: 5px;
+}
+.subjectName:hover {
+    background-color: var(--bgc-red);
+}
+
+
